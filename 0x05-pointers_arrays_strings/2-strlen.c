@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strlen - This function returns the length of a string
- * *s: string with length to be calculated.
+ * _strlen -returns the length of a string
+ * *s: string with length to be calculated
  * Return: 0 if successful
  */
 
