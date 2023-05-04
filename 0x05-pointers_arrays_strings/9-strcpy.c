@@ -2,8 +2,8 @@
 
 /**
  * _strcpy - This function copies string including terminating byte
- * *dest: first pointer
- * *src: second pointer
+ * @dest: first pointer
+ * @src: second pointer
  * Return: dest if successful.
  */
 
