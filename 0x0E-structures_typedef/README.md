@@ -1,0 +1,1 @@
+Task for structure-typedef
