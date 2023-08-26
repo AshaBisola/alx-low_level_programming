@@ -1,1 +1,1 @@
-This is the first project for C-program
+This contains a list of tasks that introduce one to the C language
