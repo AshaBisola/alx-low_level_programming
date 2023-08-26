@@ -1,35 +1,26 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
-* main - function to check the size of last digit of random
-* number
-*
-* Return: 0
-*/
-
+ * main - prints out the last digit of a number and some info
+ * Return: Returns 0
+ */
 int main(void)
 {
-int n, l;
+	int n;
+	int lst_digt;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	lst_digt = n % 10;
 
-l = n % 10;
+	if (lst_digt > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, lst_digt);
+	else if (lst_digt == 0)
+		printf("Last digit of %d is %d and is 0\n", n, lst_digt);
+	else if (lst_digt < 6 && lst_digt != 0)
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lst_digt);
 
-if (l > 5)
-{
-printf("Last digit of %d is %d and is greater than 5\n", n, l);
-}
-else if (l == 0)
-{
-printf("Last digit of %d is %d and is 0\n", n, l);
-}
-else if (l < 6 && l != 0)
-{
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
-}
-
-return (0);
+	return (0);
 }
